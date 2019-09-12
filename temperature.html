@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Temperature(celsius) {
+        this.celsius=celsius;
+        this.getCtoF=function () {
+            let f=1.8*celsius+32;
+            return f;
+        };
+        this.getCtoK=function () {
+            let k=celsius+273;
+            return k;
+        }
+    }
+    let temperature= new Temperature(25);
+    let fahrenheit=temperature.getCtoF();
+    let kevin=temperature.getCtoK();
+    alert(fahrenheit+"---"+kevin);
+</script>
+</body>
+</html>
